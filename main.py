@@ -81,4 +81,4 @@ def Download_File(username):
     return send_file(PATH, as_attachment=True)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+      app.run('0.0.0.0', 80)
