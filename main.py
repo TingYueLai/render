@@ -77,7 +77,7 @@ def login():
 #fff/name_env/file/123.mp4
 @app.route('/download/<username>')
 def Download_File(username):
-    PATH = 'file/'+username+".mp4"
+    PATH = 'file/'+username
     return send_file(PATH, as_attachment=True)
 
 if __name__ == "__main__":
